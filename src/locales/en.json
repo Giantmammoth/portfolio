@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline1": "I build solutions",
+    "tagline2": "that connect",
+    "tagline3": "technology and people.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "[ ABOUT ME ]",
+    "education": "Education",
+    "bio": "I'm a passionate Fullstack JavaScript and Mobile Developer with nearly 4 years of experience building impactful applications. I love solving challenges and crafting meaningful user experiences. My focus: building scalable, intuitive, and future-ready digital products.",
+    "role": "Fullstack JavaScript & Mobile Developer"
+  },
+  "skills": {
+    "title": "Tech Skills",
+    "subtitle": "[ SKILLS ]"
+  },
+  "projects": {
+    "title": "Selected Work",
+    "subtitle": "[ SELECTED WORK ]",
+    "comingSoon": "Coming Soon",
+    "description": "My projects are currently under development. Come back soon to discover my work!"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "[ EXPERIENCE ]",
+    "items": {
+      "1": {
+        "position": "Fullstack JS & Mobile Engineer",
+        "description": "Building modern web and mobile applications with advanced features like real-time updates, secure payments, and CI/CD automation."
+      },
+      "2": {
+        "position": "Fullstack JS & Mobile Engineer",
+        "description": "Developing scalable web/mobile apps using React, Flutter, Node.js, and gRPC."
+      },
+      "3": {
+        "position": "Frontend Engineer",
+        "description": "Built a streaming platform for manga reading using ReactJS."
+      },
+      "4": {
+        "position": "Fullstack JS Engineer",
+        "description": "Designed and deployed a construction management platform with React + Node."
+      },
+      "5": {
+        "position": "Desktop Application Engineer",
+        "description": "Built a desktop app for sales management (Delphi + SQL Server)."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "subtitle": "[ ACHIEVEMENTS ]"
+  },
+  "contact": {
+    "title": "Let's create something remarkable together",
+    "subtitle": "[ CONTACT ]",
+    "description": "Collaborate with me to craft exceptional designs that reflect your unique vision.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "footer": "All rights reserved"
+  },
+  "marquee": {
+    "hero": "FULLSTACK DEVELOPER • MOBILE ENGINEER • JAVASCRIPT • REACT • NODE.JS • FLUTTER • TYPESCRIPT •",
+    "about": "ABOUT ME • FULLSTACK DEVELOPER • MOBILE ENGINEER • 4 YEARS EXPERIENCE •",
+    "aboutBottom": "PASSIONATE DEVELOPER • PROBLEM SOLVER • CREATIVE THINKER • TECH ENTHUSIAST •",
+    "skills": "TECH STACK • FRONTEND • BACKEND • MOBILE • DATABASE • DEVOPS •",
+    "skillsBottom": "REACT • TYPESCRIPT • NODE.JS • FLUTTER • FIREBASE • DOCKER • PYTHON •",
+    "experience": "PROFESSIONAL EXPERIENCE • CAREER JOURNEY • WORK HISTORY • 4+ YEARS •",
+    "experienceBottom": "IRIS DIGITAL • ETECH CONSULTING • EXPRESS IN CODE • SOAVATO • CENI •",
+    "achievements": "ACHIEVEMENTS • AWARDS • HACKATHONS • RECOGNITIONS • DEVFEST • GDG •",
+    "achievementsBottom": "BACKEND DEVELOPER • FULLSTACK JS DEV • HACKATHON WINNER • TECH CHAMPION •",
+    "contact": "LET'S WORK TOGETHER • CONTACT ME • COLLABORATE • BUILD SOMETHING AMAZING •",
+    "contactBottom": "READY TO START • AVAILABLE FOR PROJECTS • LET'S BUILD TOGETHER •"
+  }
+}

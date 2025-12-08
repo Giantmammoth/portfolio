@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline1": "Je crée des solutions",
+    "tagline2": "qui connectent",
+    "tagline3": "la technologie et les gens.",
+    "viewProjects": "Voir les projets",
+    "contactMe": "Me contacter"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "[ À PROPOS DE MOI ]",
+    "education": "Formation",
+    "bio": "Je suis un développeur Fullstack JavaScript et Mobile passionné avec près de 4 ans d'expérience dans la création d'applications impactantes. J'adore résoudre des défis et créer des expériences utilisateur significatives. Mon objectif : construire des produits numériques évolutifs, intuitifs et prêts pour l'avenir.",
+    "role": "Développeur Fullstack JavaScript & Mobile"
+  },
+  "skills": {
+    "title": "Compétences techniques",
+    "subtitle": "[ COMPÉTENCES ]"
+  },
+  "projects": {
+    "title": "Projets sélectionnés",
+    "subtitle": "[ PROJETS SÉLECTIONNÉS ]",
+    "comingSoon": "Bientôt disponible",
+    "description": "Mes projets sont en cours de développement. Revenez bientôt pour découvrir mes réalisations !"
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "[ EXPÉRIENCE ]",
+    "items": {
+      "1": {
+        "position": "Ingénieur Fullstack JS & Mobile",
+        "description": "Développement d'applications web et mobiles modernes avec des fonctionnalités avancées comme les mises à jour en temps réel, les paiements sécurisés et l'automatisation CI/CD."
+      },
+      "2": {
+        "position": "Ingénieur Fullstack JS & Mobile",
+        "description": "Développement d'applications web/mobiles évolutives en utilisant React, Flutter, Node.js et gRPC."
+      },
+      "3": {
+        "position": "Ingénieur Frontend",
+        "description": "Création d'une plateforme de streaming pour la lecture de mangas en utilisant ReactJS."
+      },
+      "4": {
+        "position": "Ingénieur Fullstack JS",
+        "description": "Conception et déploiement d'une plateforme de gestion de construction avec React + Node."
+      },
+      "5": {
+        "position": "Ingénieur Application Desktop",
+        "description": "Création d'une application desktop pour la gestion des ventes (Delphi + SQL Server)."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Réalisations",
+    "subtitle": "[ RÉALISATIONS ]"
+  },
+  "contact": {
+    "title": "Créons quelque chose d'exceptionnel ensemble",
+    "subtitle": "[ CONTACT ]",
+    "description": "Collaborez avec moi pour créer des designs exceptionnels qui reflètent votre vision unique.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "footer": "Tous droits réservés"
+  },
+  "marquee": {
+    "hero": "DÉVELOPPEUR FULLSTACK • INGÉNIEUR MOBILE • JAVASCRIPT • REACT • NODE.JS • FLUTTER • TYPESCRIPT •",
+    "about": "À PROPOS DE MOI • DÉVELOPPEUR FULLSTACK • INGÉNIEUR MOBILE • 4 ANS D'EXPÉRIENCE •",
+    "aboutBottom": "DÉVELOPPEUR PASSIONNÉ • RÉSOLVEUR DE PROBLÈMES • PENSEUR CRÉATIF • PASSIONNÉ DE TECH •",
+    "skills": "STACK TECHNIQUE • FRONTEND • BACKEND • MOBILE • BASE DE DONNÉES • DEVOPS •",
+    "skillsBottom": "REACT • TYPESCRIPT • NODE.JS • FLUTTER • FIREBASE • DOCKER • PYTHON •",
+    "experience": "EXPÉRIENCE PROFESSIONNELLE • PARCOURS PROFESSIONNEL • HISTORIQUE DE TRAVAIL • 4+ ANS •",
+    "experienceBottom": "IRIS DIGITAL • ETECH CONSULTING • EXPRESS IN CODE • SOAVATO • CENI •",
+    "achievements": "RÉALISATIONS • PRIX • HACKATHONS • RECONNAISSANCES • DEVFEST • GDG •",
+    "achievementsBottom": "DÉVELOPPEUR BACKEND • DÉVELOPPEUR FULLSTACK JS • VAINQUEUR DE HACKATHON • CHAMPION TECH •",
+    "contact": "TRAVAILLONS ENSEMBLE • CONTACTEZ-MOI • COLLABORONS • CRÉONS QUELQUE CHOSE D'EXCEPTIONNEL •",
+    "contactBottom": "PRÊT À COMMENCER • DISPONIBLE POUR PROJETS • CRÉONS ENSEMBLE •"
+  }
+}
