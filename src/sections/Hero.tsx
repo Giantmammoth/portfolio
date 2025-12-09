@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '../components/Button';
 import { Marquee } from '../components/Marquee';
 import { personalInfo } from '../data/personal';
+// @ts-expect-error - Iridescence is a JSX component without TypeScript definitions
+import Iridescence from '../components/Iridescence';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -37,31 +39,16 @@ export const Hero = () => {
         style={{ y }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-background to-background" />
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute top-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [90, 0, 90],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
-        />
+        <div className="absolute inset-0 opacity-100">
+          <Iridescence 
+            color={[0.5, 0.8, 1.0]} 
+            speed={0.5} 
+            amplitude={0.15} 
+            mouseReact={true}
+            className="w-full h-full"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background/40 to-background/60" />
       </motion.div>
 
       {/* Content */}
