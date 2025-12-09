@@ -1,5 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { SectionTitle } from '../components/SectionTitle';
 import { Marquee } from '../components/Marquee';
@@ -9,21 +8,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { GraduationCap } from 'lucide-react';
+import TiltedCard from '../components/TiltedCard';
 
 export const About = () => {
   const { t } = useTranslation();
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start end', 'end start'],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-30%']);
 
   return (
     <section
       id="about"
-      ref={containerRef}
       className="relative py-32 px-4 overflow-hidden"
     >
       {/* Marquee en haut */}
@@ -40,31 +32,29 @@ export const About = () => {
           <SectionTitle title={t('about.title')} subtitle={t('about.subtitle')} />
         </div>
 
-        <motion.div
-          style={{ y }}
-          className="relative z-10"
-        >
+        <div className="relative z-10">
           {/* Image et Bio en layout grid avec Card */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mb-12">
-            {/* Image de profil avec Avatar */}
+            {/* Image de profil avec TiltedCard */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative order-2 md:order-1"
+              className="relative order-2 md:order-1 aspect-[3/4]"
             >
-              <Card className="overflow-hidden border-border/30 bg-card/80 backdrop-blur-sm">
-                <CardContent className="p-0">
-                  <div className="relative aspect-[3/4] overflow-hidden">
-                    <img
-                      src={profileImage}
-                      alt="Profile"
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
+              <TiltedCard
+                imageSrc={profileImage}
+                altText={t('about.title')}
+                containerHeight="100%"
+                containerWidth="100%"
+                imageHeight="100%"
+                imageWidth="100%"
+                scaleOnHover={1.05}
+                rotateAmplitude={12}
+                showMobileWarning={false}
+                showTooltip={false}
+              />
             </motion.div>
 
             {/* Texte Bio avec Card */}
@@ -140,7 +130,7 @@ export const About = () => {
               ))}
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Background decoration */}

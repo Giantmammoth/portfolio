@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { personalInfo } from '../data/personal';
@@ -9,17 +9,6 @@ import GlassSurface from './GlassSurface';
 export const Navigation = () => {
   const { t } = useTranslation();
   const { language, setLanguage } = useLanguageStore();
-  const [scrolled, setScrolled] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -115,44 +104,38 @@ export const Navigation = () => {
 
   return (
     <motion.nav
-      style={{ opacity }}
       className="fixed top-4 left-4 right-4 z-50 transition-all duration-300"
     >
-      {scrolled ? (
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            whileHover={{ 
-              scale: 1.02,
-              y: -2
-            }}
-            transition={{ 
-              type: "spring", 
-              stiffness: 300, 
-              damping: 20 
-            }}
-            className="cursor-pointer group"
-          >
-            <div className="transition-shadow duration-300 group-hover:shadow-2xl">
-              <GlassSurface
-                width="100%"
-                height="auto"
-                borderRadius={24}
-                borderWidth={0.05}
-                brightness={50}
-                opacity={0.93}
-                blur={11}
-                className="shadow-lg transition-all duration-300 border border-black/10 dark:border-white/10"
-              >
-                {navContent}
-              </GlassSurface>
-            </div>
-          </motion.div>
-        </div>
-      ) : (
-        <div className="max-w-7xl mx-auto">
-          {navContent}
-        </div>
-      )}
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          whileHover={{ 
+            scale: 1.02,
+            y: -2
+          }}
+          transition={{ 
+            type: "spring", 
+            stiffness: 300, 
+            damping: 20 
+          }}
+          className="cursor-pointer group"
+        >
+          <div className="transition-shadow duration-300 group-hover:shadow-2xl">
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={24}
+              borderWidth={0.05}
+              brightness={50}
+              opacity={0.75}
+              blur={11}
+              backgroundOpacity={0.55}
+              className="shadow-lg transition-all duration-300 border border-black/10 dark:border-white/10 bg-white/70 dark:bg-white/30"
+            >
+              {navContent}
+            </GlassSurface>
+          </div>
+        </motion.div>
+      </div>
     </motion.nav>
   );
 };

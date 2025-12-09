@@ -6,6 +6,8 @@ import { Marquee } from '../components/Marquee';
 import { personalInfo } from '../data/personal';
 // @ts-expect-error - Iridescence is a JSX component without TypeScript definitions
 import Iridescence from '../components/Iridescence';
+// @ts-expect-error - GlassSurface is a JSX component without TypeScript definitions
+import GlassSurface from '../components/GlassSurface';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -144,19 +146,29 @@ export const Hero = () => {
             repeat: Infinity,
             ease: 'easeInOut',
           }}
-          className="w-6 h-10 border-2 border-text/30 rounded-full flex items-start justify-center p-2"
         >
-          <motion.div
-            animate={{
-              y: [0, 12, 0],
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-            className="w-1.5 h-1.5 bg-accent rounded-full"
-          />
+          <GlassSurface
+            width={24}
+            height={40}
+            borderRadius={12}
+            borderWidth={0.05}
+            brightness={50}
+            opacity={0.93}
+            blur={11}
+            className="flex items-start justify-center p-2"
+          >
+            <motion.div
+              animate={{
+                y: [0, 12, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+              className="w-1.5 h-1.5 bg-accent rounded-full"
+            />
+          </GlassSurface>
         </motion.div>
       </motion.div>
 
