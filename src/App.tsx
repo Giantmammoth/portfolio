@@ -9,15 +9,15 @@ import { Contact } from './sections/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-text">
-      <Navigation />
+    <div className="min-h-screen bg-black text-white">
+      {/* <Navigation /> */}
       <Hero />
-      <About />
+      {/* <About />
       <Skills />
       <Projects />
       <Experience />
       <Achievements />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

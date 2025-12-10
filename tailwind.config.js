@@ -57,6 +57,7 @@ export default {
   		},
   		fontFamily: {
   			sans: [
+  				'Sora',
   				'Inter',
   				'system-ui',
   				'sans-serif'
